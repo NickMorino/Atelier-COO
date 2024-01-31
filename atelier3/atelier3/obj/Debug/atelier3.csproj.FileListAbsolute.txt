@@ -6,3 +6,11 @@ C:\Users\Nickd\source\repos\atelier3\atelier3\obj\Debug\atelier3.csproj.Suggeste
 C:\Users\Nickd\source\repos\atelier3\atelier3\obj\Debug\atelier3.csproj.CoreCompileInputs.cache
 C:\Users\Nickd\source\repos\atelier3\atelier3\obj\Debug\atelier3.exe
 C:\Users\Nickd\source\repos\atelier3\atelier3\obj\Debug\atelier3.pdb
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\obj\Debug\atelier3.csproj.AssemblyReference.cache
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\obj\Debug\atelier3.csproj.SuggestedBindingRedirects.cache
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\obj\Debug\atelier3.csproj.CoreCompileInputs.cache
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\obj\Debug\atelier3.exe
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\obj\Debug\atelier3.pdb
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\bin\Debug\atelier3.exe.config
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\bin\Debug\atelier3.exe
+C:\Users\1446205\Git\Atelier-COO\atelier3\atelier3\bin\Debug\atelier3.pdb

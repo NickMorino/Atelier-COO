@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace atelier3
 {
-    internal class Lune
+    internal class Lune : IComparable
     {
-        string _nom;
-        private double _rayon;
-        double _masse; // Masse de la planète terre
+        private string _nom; // Nom de la lune
+        private double _rayon; // Rayon de la lune
+        private double _masse; // Masse de la lune 
 
+        /// <summary>
+        /// Constructeur
+        /// </summary>
+        /// <param name="nom"> Nom de la lune </param>
+        /// <param name="rayon"> Rayon de la lune </param>
+        /// <param name="masse"> Masse de la lune </param>
         public Lune(string nom, double rayon, double masse)
         {
             _nom = nom;
@@ -19,12 +25,18 @@ namespace atelier3
             _masse = masse;
         }
 
+        /// <summary>
+        /// Retourne le nom ou modifie le nom
+        /// </summary>
         public string Nom
         {
             get { return _nom; }
             set { _nom = value; }
         }
 
+        /// <summary>
+        /// Retourne le rayon ou modifie le rayon si valeur est plus grand que 0
+        /// </summary>
         public double Rayon
         {
             get { return _rayon; }
@@ -35,9 +47,12 @@ namespace atelier3
             }
         }
 
+        /// <summary>
+        /// Retourne la masse ou modifie la masse si valeur est plus grand que 0.
+        /// </summary>
         public double Masse
         {
-            get { return Masse; }
+            get { return _masse; }
             set
             {
                 if (value > 0)
@@ -45,66 +60,173 @@ namespace atelier3
             }
         }
 
+        /// <summary>
+        /// Retourne la superficie de la lune
+        /// </summary>
         public double Superficie
         {
             get { return 4 * (_rayon * 2) * Math.PI; }
         }
 
+        /// <summary>
+        /// Retourne le volume de la lune
+        /// </summary>
         public double Volume
         {
             get { return 4 / (3 * Math.PI * Math.Pow(_rayon, 3)); }
         }
 
+        /// <summary>
+        /// Retourne la masse volumique de la lune
+        /// </summary>
         public double MasseVolumique
         {
             get { return _masse / Volume; }
         }
 
-        public bool estPlusVolumineuse(Planete p1)
+        /// <summary>
+        /// Vérifie si la lune est plus volumineuse qu'une autre
+        /// </summary>
+        /// <param name="l1"> lune à comparer </param>
+        /// <returns> Retourne faux si moins volumineuse et vrai si plus volumineuse </returns>
+        public bool estPlusVolumineuse(Lune l1)
         {
-            if (this.Volume < p1.Volume)
+            if (this.Volume < l1.Volume)
                 return false;
             else
                 return true;
         }
 
-        public bool estPlusDense(Planete p1)
+        /// <summary>
+        /// Vérifie si la lune est plus dense qu'une autre
+        /// </summary>
+        /// <param name="l1"> lune à comparer </param>
+        /// <returns> Retourne faux si moins dense et vrai si plus dense </returns>
+        public bool estPlusDense(Lune l1)
         {
-            if (this.MasseVolumique < p1.MasseVolumique)
+            if (this.MasseVolumique < l1.MasseVolumique)
                 return false;
             else
                 return true;
         }
 
-        public bool estIdentique(Planete p1)
+        /// <summary>
+        /// Vérifie si la lune est identique selon son nom, son rayon et sa masse à une autre
+        /// </summary>
+        /// <param name="l1"> lune à comparer </param>
+        /// <returns> Vrai si elle est identique et faux si pas identique </returns>
+        public bool estIdentique(Lune l1)
         {
-            if (this.Nom == p1.Nom && this.Rayon == p1.Rayon && this.Masse == p1.Masse)
+            if (this.Nom == l1.Nom && this.Rayon == l1.Rayon && this.Masse == l1.Masse)
                 return true;
             else
                 return false;
         }
 
-        public bool estPlusPetite(Planete p1)
+        /// <summary>
+        /// Vérifie si la lune est plus petite qu'une autre lune selon sa masse
+        /// </summary>
+        /// <param name="l1"> lune à comparer </param>
+        /// <returns> Retourne faux si plus petite et vrai si plus grande </returns>
+        public bool estPlusPetite(Lune l1)
         {
-            if (this.Masse < p1.Masse)
+            if (this.Masse < l1.Masse)
                 return false;
             else
                 return true;
         }
 
-        public bool estPlusGrande(Planete p1)
+        /// <summary>
+        /// Vérifie si la lune est plus grande qu'une autre lune selon sa masse
+        /// </summary>
+        /// <param name="l1"> lune à comparer </param>
+        /// <returns> Retourne faux si plus grande et faux si plus petite </returns>
+        public bool estPlusGrande(Lune l1)
         {
-            if (this.Masse > p1.Masse)
+            if (this.Masse > l1.Masse)
                 return true;
             else
                 return false;
         }
-        public bool estEgale(Planete p1)
+
+        /// <summary>
+        /// Vérifie si une lune est égale avec une autre selon sa superficie
+        /// </summary>
+        /// <param name="l1"> lune à vérifier </param>
+        /// <returns></returns>
+        public bool estEgale(Lune l1)
         {
-            if (this.Superficie == p1.Superficie)
+            if (this.Superficie == l1.Superficie)
                 return true;
             else
                 return false;
-        }    
+        }
+
+        /// <summary>
+        /// Vérifie si la lune est égale à une autre selon son nom, son rayon et sa masse
+        /// </summary>
+        /// <param name="obj"> Objet de type lune </param>
+        /// <returns> Retourne vrai si égale et faux si pas égale </returns>
+        public override bool Equals(object obj)
+        {
+            if (this.Nom == ((Lune)obj).Nom && this.Rayon == ((Lune)obj).Rayon && this.Masse == ((Lune)obj).Masse)
+                return true;
+            else
+                return false;
+        }
+
+        /// <summary>
+        /// Compare le rayon de la lune à une autre
+        /// </summary>
+        /// <param name="obj"> lune à comparer </param>
+        /// <returns> Retourne 1 si le rayon est plus grand, -1 si plus petit et 0 si égale </returns>
+        public int CompareTo(Object obj)
+        {
+            if (this.Rayon > ((Lune)obj).Rayon)
+                return 1;
+            else if (this.Rayon < ((Lune)obj).Rayon)
+                return -1;
+            else
+                return 0;
+        }
+
+        /// <summary>
+        /// Afficher les information de la lune
+        /// </summary>
+        /// <returns> Information de la lune </returns>
+        public override string ToString()
+        {
+            return "Lune : " + this._nom + " Rayon : " + this._rayon + " Masse : " + this._masse;
+        }
+
+        public static bool operator ==(Lune l1, Lune l2)
+        {
+            return l1.Equals(l2);
+        }
+
+        public static bool operator !=(Lune l1, Lune l2)
+        {
+            return !l1.Equals(l2);
+        }
+
+        public static bool operator <(Lune l1, Lune l2)
+        {
+            return l1.Rayon < l2.Rayon;
+        }
+
+        public static bool operator >(Lune l1, Lune l2)
+        {
+            return l1.Rayon > l2.Rayon;
+        }
+
+        public static bool operator <=(Lune l1, Lune l2)
+        {
+            return l1.Rayon <= l2.Rayon;
+        }
+
+        public static bool operator >=(Lune l1, Lune l2)
+        {
+            return l1.Rayon >= l2.Rayon;
+        }
     }
 }
