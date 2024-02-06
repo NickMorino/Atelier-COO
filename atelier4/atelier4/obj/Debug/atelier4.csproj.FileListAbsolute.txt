@@ -1,0 +1,7 @@
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/obj/Debug/atelier4.csproj.AssemblyReference.cache
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/obj/Debug/atelier4.csproj.CoreCompileInputs.cache
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/bin/Debug/atelier4.exe.config
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/bin/Debug/atelier4.exe
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/bin/Debug/atelier4.pdb
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/obj/Debug/atelier4.exe
+/Users/nicolasmorin/Documents/COO/Atelier-COO/atelier4/atelier4/obj/Debug/atelier4.pdb

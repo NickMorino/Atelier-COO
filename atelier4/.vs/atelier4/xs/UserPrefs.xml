@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{E55066E8-83B9-4A81-AE62-EF3A35E1EA61}|Default">
+  <MonoDevelop.Ide.ItemProperties.atelier4 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="atelier4/Program.cs">
+    <Files>
+      <File FileName="atelier4/Program.cs" Line="20" Column="37" />
+      <File FileName="atelier4/Planete.cs" Line="141" Column="72" />
+      <File FileName="atelier4/Galaxie.cs" Line="80" Column="78" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="atelier4">
+            <Node name="atelier4">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

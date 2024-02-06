@@ -20,7 +20,7 @@ namespace atelier4
         }
 
         /// <summary>
-        /// Accesseur
+        /// Accesseur / Retourne le nom ou modifie le nom du corps celeste
         /// </summary>
         public string Nom
         {
