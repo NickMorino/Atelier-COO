@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal class Soleil : AstreCoeur
+    internal class Soleil : AstreCoeur, IOrbitable
     {
         double _couronne; // Taille de la couronne
 

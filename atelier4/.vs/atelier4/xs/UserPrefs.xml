@@ -1,16 +1,25 @@
 ﻿<Properties StartupConfiguration="{E55066E8-83B9-4A81-AE62-EF3A35E1EA61}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.atelier4 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="atelier4/Program.cs">
     <Files>
-      <File FileName="atelier4/Program.cs" Line="20" Column="37" />
-      <File FileName="atelier4/Planete.cs" Line="141" Column="72" />
-      <File FileName="atelier4/Galaxie.cs" Line="80" Column="78" />
+      <File FileName="atelier4/CorpCeleste.cs" />
+      <File FileName="atelier4/SystemeSolaire.cs" Line="45" Column="59" />
+      <File FileName="atelier4/Program.cs" Line="24" Column="47" />
+      <File FileName="atelier4/Planete.cs" />
+      <File FileName="atelier4/Lune.cs" />
+      <File FileName="atelier4/Astre.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="atelier4">
-            <Node name="atelier4">
+          <Node name="atelier4" expanded="True">
+            <Node name="atelier4" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
@@ -18,10 +27,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

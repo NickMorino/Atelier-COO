@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal abstract class Astre : CorpCeleste
+    internal abstract class Astre : CorpCeleste, IOrbitable
     {
         protected double _rayon;
         protected double _masse;
+        protected Satellite[] _satellites; 
 
         public Astre(string nom, double rayon, double masse) : base(nom)
         {
             _rayon = rayon;
             _masse = masse;
+            _satellites = new Satellite[10]; 
         }
 
         /// <summary>
@@ -65,6 +67,22 @@ namespace atelier4
         public double MasseVolumique
         {
             get { return _masse / Volume; }
+        }
+        public Satellite[] Satellites
+        {
+            get { return _satellites; }
+        }
+
+        public Satellite this[int i]
+        {
+            get { return _satellites[i]; }
+
+            set { _satellites[i] = value;  }
+        }
+
+        public override string ToString()
+        {
+            return "Nom : " + _nom;
         }
     }
 }

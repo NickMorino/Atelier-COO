@@ -8,10 +8,9 @@ namespace atelier4
 {
     internal class Planete : AstreCoeur, IComparable
     {
-       
         private Lune[] _listeLune; // Liste de lune
         private int _nbLune; // Nombre de lunes
-
+       
         /// <summary>
         /// Constructeur
         /// </summary>
@@ -22,6 +21,18 @@ namespace atelier4
         {
             _listeLune = new Lune[3];
             _nbLune = 0;
+        }
+
+        public override int NbElements()
+        {
+            int nbElement = _listeLune.Length;
+
+            for (int i = 0; i < _listeLune.Length; i++)
+            {
+                if (this._listeLune[i] != null)
+                    nbElement += _listeLune[i].NbElements();
+            }
+            return nbElement;
         }
 
         /// <summary>
@@ -129,6 +140,8 @@ namespace atelier4
             else
                 return 0;
         }
+
+     
 
         public Lune this[int index]
         {

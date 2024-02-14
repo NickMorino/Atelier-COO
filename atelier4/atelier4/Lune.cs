@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal class Lune : Astre, IComparable
+    internal class Lune : Astre, IComparable, IOrbitable
     {
 
         /// <summary>
@@ -18,6 +18,18 @@ namespace atelier4
         public Lune(string nom, double rayon, double masse) : base(nom, rayon, masse)
         {
 
+        }
+
+        public override int NbElements()
+        {
+            int nbElement = 0;
+
+            for (int i= 0; i < this._satellites.Length; i++)
+            {
+                if (this._satellites[i] != null)
+                    nbElement++;
+            }
+            return nbElement;
         }
 
         /// <summary>

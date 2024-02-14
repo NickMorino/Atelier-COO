@@ -41,6 +41,20 @@ namespace atelier4
             set { _type = value; }
         }
 
+        public override int NbElements()
+        {
+            int nbElement = _systemeSolaires.Length;
+
+            for (int i= 0; i < _systemeSolaires.Length; i++)
+            {
+                nbElement += _systemeSolaires[i].NbElements();
+            }
+            return nbElement;
+        }
+        
+      
+    
+
         /// <summary>
         /// Indexeur
         /// </summary>

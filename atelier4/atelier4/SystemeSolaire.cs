@@ -35,6 +35,19 @@ namespace atelier4
             return "Nom du sytème solaire : " + _nom;
         }
 
+        public override int NbElements()
+        {
+            int nbElement = _planete.Length;
+
+            for (int i = 0; i < _planete.Length; i++)
+            {
+                if (this._planete[i] != null)
+                    nbElement += _planete[i].NbElements();
+            }
+            return nbElement;
+
+        }
+
         /// <summary>
         /// Indexeur
         /// </summary>
