@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal class Lune : Astre, IComparable, IOrbitable
+    internal class Lune : Astre, IComparable, IOrbitable, ICloneable
     {
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace atelier4
         {
             int nbElement = 0;
 
-            for (int i= 0; i < this._satellites.Length; i++)
+            for (int i = 0; i < this._satellites.Length; i++)
             {
                 if (this._satellites[i] != null)
                     nbElement++;
@@ -145,16 +145,6 @@ namespace atelier4
         public override string ToString()
         {
             return "Lune : " + this._nom + " Rayon : " + this._rayon + " Masse : " + this._masse;
-        }
-
-        public static bool operator ==(Lune l1, Lune l2)
-        {
-            return l1.Equals(l2);
-        }
-
-        public static bool operator !=(Lune l1, Lune l2)
-        {
-            return !l1.Equals(l2);
         }
 
         public static bool operator <(Lune l1, Lune l2)

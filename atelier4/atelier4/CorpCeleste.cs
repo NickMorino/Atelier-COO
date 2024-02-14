@@ -28,5 +28,6 @@ namespace atelier4
             set { _nom = value; }
         }
         public abstract int NbElements();
+
     }
 }

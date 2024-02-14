@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal class Planete : AstreCoeur, IComparable
+    internal class Planete : AstreCoeur, IComparable, ICloneable
     {
         private Lune[] _listeLune; // Liste de lune
         private int _nbLune; // Nombre de lunes
@@ -29,7 +29,7 @@ namespace atelier4
 
             for (int i = 0; i < _listeLune.Length; i++)
             {
-                if (this._listeLune[i] != null)
+                if (!(this._listeLune[i] is null))
                     nbElement += _listeLune[i].NbElements();
             }
             return nbElement;
@@ -178,16 +178,6 @@ namespace atelier4
                 Console.WriteLine("Le tableau de lune est plein.");
             }
             return p1;
-        }
-
-        public static bool operator ==(Planete p1, Planete p2)
-        {
-            return p1.Equals(p2);
-        }
-
-        public static bool operator !=(Planete p1, Planete p2)
-        {
-            return !p1.Equals(p2);
         }
 
         public static bool operator <(Planete p1, Planete p2)

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace atelier4
 {
-	public class Satellite
+	public class Satellite , ICloneable
 	{
 		private string _nom;
 

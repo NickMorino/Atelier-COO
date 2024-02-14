@@ -18,6 +18,7 @@ namespace atelier4
             galaxie1 += systemeSolaire1;
             systemeSolaire1 += planeteMars;
             planeteMars += luneToto;
+
             Console.WriteLine(galaxie1.NbElements());
 
 

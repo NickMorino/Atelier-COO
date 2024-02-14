@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace atelier4
 {
-    internal class Galaxie : CorpCeleste
+    internal class Galaxie : CorpCeleste, ICloneable
     {
         private SystemeSolaire[] _systemeSolaires; // Tableau des systèmes solaires
         private string _type; // Type de galaxie
@@ -22,6 +22,19 @@ namespace atelier4
             _type = type;
             _systemeSolaires = new SystemeSolaire[10];
             _nbSystemeSolaires = 0;
+        }
+
+        public Galaxie(Galaxie galaxie)
+        {
+            galaxie._type = _type;
+            galaxie._nom = _nom;
+            galaxie._nbSystemeSolaires = _nbSystemeSolaires;
+            galaxie._systemeSolaires = _systemeSolaires;
+        }
+
+        public object Clone()
+        {
+            return new Galaxie(this);
         }
 
         /// <summary>
@@ -47,14 +60,12 @@ namespace atelier4
 
             for (int i= 0; i < _systemeSolaires.Length; i++)
             {
-                nbElement += _systemeSolaires[i].NbElements();
+                if(this._systemeSolaires[i] != null)
+                    nbElement += _systemeSolaires[i].NbElements();
             }
             return nbElement;
         }
         
-      
-    
-
         /// <summary>
         /// Indexeur
         /// </summary>
