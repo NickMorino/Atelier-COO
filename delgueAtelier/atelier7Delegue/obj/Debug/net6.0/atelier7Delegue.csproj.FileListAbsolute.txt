@@ -1,0 +1,15 @@
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\bin\Debug\net6.0\atelier7Delegue.exe
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\bin\Debug\net6.0\atelier7Delegue.deps.json
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\bin\Debug\net6.0\atelier7Delegue.runtimeconfig.json
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\bin\Debug\net6.0\atelier7Delegue.dll
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\bin\Debug\net6.0\atelier7Delegue.pdb
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.csproj.AssemblyReference.cache
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.AssemblyInfoInputs.cache
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.AssemblyInfo.cs
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.csproj.CoreCompileInputs.cache
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.dll
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\refint\atelier7Delegue.dll
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.pdb
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\atelier7Delegue.genruntimeconfig.cache
+C:\Users\1446205\Git\Atelier-COO\Atelier-COO\atelier7\atelier7Delegue\atelier7Delegue\obj\Debug\net6.0\ref\atelier7Delegue.dll
