@@ -61,7 +61,7 @@ namespace atelier7Delegue
         
         public void changerEncrytpion (TypePourDelegue encryption)
         {
-            encryptionModif = encryption;
+            encryptionModif = new TypePourDelegue(encryption);
         }
     }    
 }

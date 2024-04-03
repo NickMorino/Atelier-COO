@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\atelier7\\atelier7Delegue\\atelier7Delegue\\atelier7Delegue.csproj",
+      "projectUniqueName": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\delgueAtelier\\atelier7Delegue\\atelier7Delegue.csproj",
       "projectName": "atelier7Delegue",
-      "projectPath": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\atelier7\\atelier7Delegue\\atelier7Delegue\\atelier7Delegue.csproj",
+      "projectPath": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\delgueAtelier\\atelier7Delegue\\atelier7Delegue.csproj",
       "packagesPath": "C:\\Users\\1446205.CRL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\atelier7\\atelier7Delegue\\atelier7Delegue\\obj\\",
+      "outputPath": "C:\\Users\\1446205\\Git\\Atelier-COO\\Atelier-COO\\delgueAtelier\\atelier7Delegue\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1446205.CRL\\AppData\\Roaming\\NuGet\\NuGet.Config",
